@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Rancho&display=swap');
+
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
@@ -10,4 +12,52 @@ body {
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+.wrapper {
+  font-family: Rancho, serif;
+  padding-top: 5rem;
+  margin: 0 auto;
+  width: 600px;
+}
+
+.rm {
+  background: green;
+  border-radius: 50%;
+  color: #fff;
+  border: none;
+}
+
+.rm:hover {
+  background: red;
+  transition: 0.5s ease;
+}
+
+.done {
+  text-decoration: line-through;
+}
+
+.lds-dual-ring {
+  display: inline-block;
+  width: 64px;
+  height: 64px;
+}
+.lds-dual-ring:after {
+  content: ' ';
+  display: block;
+  width: 46px;
+  height: 46px;
+  margin: 1px;
+  border-radius: 50%;
+  border: 5px solid blue;
+  border-color: blue transparent #0000ff transparent;
+  animation: lds-dual-ring 1.2s linear infinite;
+}
+@keyframes lds-dual-ring {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
 }
